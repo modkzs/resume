@@ -18,55 +18,55 @@
 
 \basicInfo{
   \email{hyx\_ict@163.com} \textperiodcentered\
-  \phone{(+86) 185-1023-8192} \textperiodcentered\
-  \linkedin[何逸轩]{https://www.linkedin.com/in/逸轩-何-b9156bbb/}}
+  \phone{(+86) 185-1023-8192}
+  }
 
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{中科院计算所}, 硕士}{2015.9 -- 2018.6}
-\datedsubsection{\textbf{北京邮电大学}, 学士}{2011.9 -- 2015.6}
+\datedsubsection{\textbf{中科院计算所}, 计算机理论，硕士}{2015.9 -- 2018.6}
+\datedsubsection{\textbf{北京邮电大学}, 软件工程，学士}{2011.9 -- 2015.6}
 
 \section{\faUsers\ 项目经历}
-\datedsubsection{\textbf{TensorFlow on Spark}}{2016年4月 -- 2016年12月}
+\datedsubsection{\textbf{TensorFlow on Spark}}{2016.4 -- 2016.12}
 \role{Java, C++, Scala}{}
 \begin{onehalfspacing}
-将 TensorFlow 移植到 Spark 上。整体使用 Java 开发，同时封装了部分 Tensorflow 的 C++ 接口
+将 TensorFlow 移植到 Spark 上
 \begin{itemize}
+  \item 部分 Tensorflow C++ 接口的封装
   \item 支持同步、异步、单机训练、多机训练等多种训练方式
-  \item 对 TensorFlow 进行了高层封装，支持 Layer 等高层接口
-  \item 考虑 Spark 集群宕机的场景
+  \item 四台机器的集群上单条数据训练速度相对于单机提升 150\%
 \end{itemize}
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{分布式深度学习框架}}{2016年6月 -- 至今}
-\role{C++}{}
+\datedsubsection{\textbf{分布式深度学习框架}}{2016.6 -- 至今}
+\role{C++， Golang}{}
 \begin{onehalfspacing}
-自己实现的分布式深度学习框架，可以自配置神经网络，支持自动求导
+独立实现的分布式深度学习框架，可以自配置神经网络，支持自动求导
 \begin{itemize}
   \item 神经网络的训练以及求导使用 C++ 实现，目前不支持多机训练，只支持 CPU
   \item 实现了简单的 Parameter Server，集成了 Raft 进行容错
 \end{itemize}
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{Query To Query match}}{2014年10月 -- 2015年5月}
-\role{Java}{}
+\datedsubsection{\textbf{文本匹配问题}}{2016.5 -- 至今}
 \begin{onehalfspacing}
-和微信的合作项目，预测2个 Query 的意图是否一致
+利用深度学习方法解决 query 匹配问题
 \begin{itemize}
-  \item 将 Query 转化为 矩阵，在此基础上利用 CNN 进行预测
-  \item 设计了多种特征，最终线上的 accuracy 为 88.3\%
+  \item 将 2 个 query 转化为相似度矩阵，利用 CNN 进行判断
+  \item 利用 CNN 的特性，将不同特征转化为多通道求解，目前准确率为 91\%
 \end{itemize}
 \end{onehalfspacing}
 
-\section{\faUsers\ 实习}
-\datedsubsection{\textbf{旷视科技}}{2017年6月 -- 至今}
+\section{\faUsers\ 实习经历}
+\datedsubsection{\textbf{旷视科技}}{2017.7 -- 至今}
 旷视科技的内部自研深度学习平台 megbrain 的开发工作
 \begin{itemize}
-  \item 添加对 FPGA 设备的支持
+  \item 添加对 FPGA 设备的支持，包括 FPGA 设备的调度、内存管理等
+  \item 添加了对 bit 级别的基础数据支持
 \end{itemize}
 
-\datedsubsection{\textbf{领英中国}}{2015年5月 -- 2015年8月}
+\datedsubsection{\textbf{领英中国}}{2015.5 -- 2015.8}
 \begin{itemize}
-  \item 基于开源的图数据库 Neo4j 搭建了位置索引，服务于线上的“附近的人”
+  \item 基于开源的图数据库 Neo4j 搭建了位置索引，为线上功能“附近的人”提供实时服务
   \item 对 mongo 进行了 archive， 按照时间查询对应的库或者表
 \end{itemize}
 
@@ -82,7 +82,7 @@
 \begin{itemize}[parsep=0.5ex]
   \item 熟悉 C++，Java，Shell 等编程语言，熟悉 linux 基本环境
   \item 熟悉常用的机器学习以及深度学习算法
-  \item 了解分布式计算以及 TensorFlow 源代码
+  \item 深入阅读 TensorFlow 源代码，熟悉分布式计算
 \end{itemize}
 
 \section{\faTrophy\ 学术竞赛}
